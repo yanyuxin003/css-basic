@@ -1,6 +1,9 @@
 body {
     background-color: white;
     font-family: 'Raleway', sans-serif;
+    /*13、 重置 `body` 的 margin and padding default values.  */
+    margin: 0; 
+    padding: 0;
 }
 
 .navigation ul {
@@ -9,10 +12,18 @@ body {
     text-align: center;
 }
 
+
+
 .navigation li {
     font-weight: 100;
     letter-spacing: 2px;
+    /*4、设置 `.navigation li` elements to have 10 pixels of padding.  */
+    padding: 10px;
 }
+
+/*14、 隐藏 `.global` */
+.global
+    {visibility: hidden;}
 
 .navigation  li.current {
     color: black;
@@ -26,6 +37,8 @@ body {
     background-size: cover;
     background-position: bottom center;
     width: 100%;
+    /*1、设 `#banner` 高度为350px. */
+    height: 350px;
 }
 
 h1 {
@@ -37,12 +50,25 @@ h1 {
     font-size: 42px;
     font-weight: 600;
     text-align: center;
-}
+    /*2、给 `h1` 添加 border style, 样式参考mockup.*/
+    border-style: solid;
+} 
 
 #main {
     padding: 40px;
     text-align: center;
+    /*11、 设置 `#main` 的 `margin` 使其内容水平居中 */
+    margin:0 auto ;
+    /*12、 设置 `#main` 宽度为500px, 高度为800px, 并且超出可以滚动. */
+    width: 500px; 
+    height: 800px;
+    overflow: auto;
 }
+
+::-webkit-scrollbar {
+    /*隐藏滚轮，作业未要求*/
+    display: none;
+    }
 
 h2 {
     padding: 20px 10px;
@@ -56,6 +82,13 @@ h3 {
     font-size: 14px;
     line-height: 48px;
     text-align: center;
+    /*3、设置 `h3` border 样式参考mockup. */
+    border: dotted;
+    /*8、使用简写, 设置 `h3` 上下 margins 30 px, 左右 margins 20 px.
+    9、使用简写, 设置 `h3` 上下 padding 20 px, 左右 padding 30 px. */
+    margin :30px,20px;
+    padding: 20px,30px;
+
 }
 
 p {
@@ -63,10 +96,14 @@ p {
     color: grey;
     font-size: 16px;
     line-height: 1.5em;
-}
+    /*6、 设置每个段落向上 margin 为 40 px.*/
+    margin-top: 40px;
+} 
 
 .pull-quote {
-
+    /*10、设置 `.pull-quote` 的宽度为 400 px. 并且通过 `margin` 使其水平居中. */
+    width: 400px;
+    margin:0 auto ;
 }
 
 .byline {
@@ -92,6 +129,10 @@ p {
     color: white;
     display: inline-block;
     text-decoration: none;
+    /*5、设置 `.share a` elements to have 14 pixels of padding. */
+    padding: 14px;
+    /*7、设置 `.share a ` margin 为 10 px. */
+    margin:10px;
 }
 
 .share a:hover {
