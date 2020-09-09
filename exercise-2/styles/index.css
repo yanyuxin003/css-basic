@@ -16,6 +16,12 @@ h1 {
     color: #fff;
     font-size: 2em;
     width: 100%;
+    /*1、给一级标题设置字体为：Georgia*/
+    font:"Georgia";
+    /*3、 给一级标题设置居中显示. */
+    text-align: center;
+    /*4、给一级标题设置字母全大写显示. */
+    text-transform:uppercase;
 }
 
 h2 {
@@ -26,6 +32,10 @@ h2 {
     line-height: 24px;
     padding-bottom: 30px;
     text-align: left;
+    /*1、给二级标题设置字体为：Georgia*/
+    font:"Georgia";
+    /*5、给二级标题设置首字母大写显示.*/
+    text-transform: capitalize;
 }
 
 p {
@@ -33,12 +43,23 @@ p {
     line-height: 1.3em;
     text-align: left;
     width: 100%;
+    /*2、给段落设置字体为：Helvetica. */
+    font:"Helvetica";
+    /*6、给段落设置字体大小为：18px. */
+    font-size: 18px;
+}
+
+/*7、 给段落第一行字体加粗.*/
+p::first-line{
+    font-weight: bold;
 }
 
 .image {
     background-size: cover;
     background-position: center;
     height: 300px;
+    /* 8、`.image` 设置背景图片（使用img文件夹下面的图片）.  */
+    background-image: url(../img/background-img.jpg);
 }
 
 .caption {
@@ -51,5 +72,29 @@ p {
     position: relative;
     top: 80%;
     width: 60%;
+    /*9、 给 `.caption` 设置背景色为白色，然后设置字体颜色为黑色.*/
+    background-color: white;
+    color: black;
+    /*10、给 `.caption` 设置透明度为0.75. */
+    opacity:0.75;
+    /*11、给 `.caption` 设置字体样式为斜体. */
+    font-style: italic;
 }
+
+ /*12、给 `.caption a` 设置鼠标hover 上去的样式，去掉下横线，颜色变成紫色 */
+ .caption a:hover{
+    text-decoration: none;
+    color: purple;
+    /* 对比示例图片后新增 */
+    background-color: white;
+}
+
+/*对比图片新增，作业没要求这个*/
+ .caption a{
+    text-decoration: none;
+    color: purple;
+}
+
+ 
+ 
 
